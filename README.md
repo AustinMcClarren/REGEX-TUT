@@ -155,6 +155,29 @@ Examples of Flags are as follows:
 /Hello/i   matches all `hello` despite case (Hello, hEllo, heLlo, hellO, hello, HELLO all match)
 ```
 
+### Character Escapes 
 
+An escape character may not have its own meaning, so all escape sequences are of two or more characters.
 
+Escape characters are part of the syntax for many programming languages, data formats, and communication protocols. For a given alphabet an escape character's purpose is to start character sequences (so named escape sequences), which have to be interpreted differently from the same characters occurring without the prefixed escape character. 
 
+```
+JavaScript uses the \ (backslash) as an escape character for:[1][2]
+
+    \' single quote
+    \" double quote
+    \\ backslash
+    \n new line
+    \r carriage return
+    \t tab
+    \b backspace
+    \f form feed
+    \v vertical tab (Internet Explorer 9 and older treats '\v as 'v instead of a vertical tab ('\x0B). If cross-browser compatibility is a concern, use \x0B instead of \v.)
+    \0 null character (U+0000 NULL) (only if the next character is not a decimal digit; else it is an octal escape sequence)
+    \xFF character represented by the hexadecimal byte "FF"
+
+Note that the \v and \0 escapes are not allowed in JSON strings. 
+```
+
+### AUTHOR 
+https://github.com/AustinMcClarren
